@@ -530,8 +530,8 @@ fn bench_real_multibatch(c: &mut Criterion) {
     for (name, num_str, num_int, string_len, new_key_rate) in scenarios {
         let mut rng = Mt19937GenRand64::new(42);
         let workload = generate_workload(
-            16,
-            16_384,
+            1,
+            262_144,
             num_str,
             num_int,
             131_072,
@@ -540,7 +540,7 @@ fn bench_real_multibatch(c: &mut Criterion) {
             &mut rng,
         );
         let param = format!(
-            "{name}_batches=16_rows=16384_groups={}",
+            "{name}_batches=1_rows=262144_groups={}",
             workload.expected_groups
         );
 
