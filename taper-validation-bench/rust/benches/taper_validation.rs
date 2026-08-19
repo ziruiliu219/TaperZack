@@ -180,8 +180,8 @@ fn scenarios() -> Vec<Scenario> {
     let base = vec![
         Scenario {
             name: "2str_long_reuse",
-            num_batches: 16,
-            batch_rows: 16_384,
+            num_batches: 1,
+            batch_rows: 262_144,
             num_str_cols: 2,
             num_int_cols: 0,
             global_cardinality: 65_536,
@@ -192,8 +192,8 @@ fn scenarios() -> Vec<Scenario> {
         },
         Scenario {
             name: "4str_long_reuse",
-            num_batches: 16,
-            batch_rows: 16_384,
+            num_batches: 1,
+            batch_rows: 262_144,
             num_str_cols: 4,
             num_int_cols: 0,
             global_cardinality: 65_536,
@@ -204,8 +204,8 @@ fn scenarios() -> Vec<Scenario> {
         },
         Scenario {
             name: "2str_2int_reuse",
-            num_batches: 16,
-            batch_rows: 16_384,
+            num_batches: 1,
+            batch_rows: 262_144,
             num_str_cols: 2,
             num_int_cols: 2,
             global_cardinality: 65_536,
@@ -216,8 +216,8 @@ fn scenarios() -> Vec<Scenario> {
         },
         Scenario {
             name: "2str_short_mostly_new",
-            num_batches: 16,
-            batch_rows: 16_384,
+            num_batches: 1,
+            batch_rows: 262_144,
             num_str_cols: 2,
             num_int_cols: 0,
             global_cardinality: 65_536,
